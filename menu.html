@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hype Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface|Varela Round">
+
+  <style>
+    /* https://colorhunt.co/palette/d3ebcdaedbce839aa8635666*/
+    body {
+      background-image: url('background.png');
+      font-family: 'Varela Round', 'Abril Fatface', sans-serif, Georgia;
+      color: #635666;
+      margin-left: auto;
+      margin-right: auto;
+      margin: 0px;
+      padding: 0px;
+      align-content: center;
+      border-radius: 2px;
+    }
+
+    header {
+      color: #AEDBCE;
+      text-align: center;
+      font-family: 'Abril Fatface', Georgia;
+      text-shadow: 5px 5px #839AA8;
+      font-size: 60px;
+      line-height: 30px;
+      height: 300px;
+    }
+
+    #stripe {
+      background-color: #AEDBCE;
+      height: 20px;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Abril Fatface', sans serif;
+      color: #839AA8;
+      font-size: 20px;
+      padding: 3px;
+      margin: 1px;
+    }
+
+    p {
+      font-family: 'Varela Round', sans serif;
+      color: #839AA8;
+      text-shadow: 0.5px 0.5px #AEDBCE;
+      font-size: 17px;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    h2 {
+      color: #839AA8;
+      text-shadow: 2px 2px #AEDBCE;
+      font-size: 25px;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    h3 {
+      font-family: 'Abril Fatface', Georgia;
+      color: #AEDBCE;
+      text-shadow: 2px 2px #839AA8;
+      font-size: 30px;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    h4 {
+      font-family: 'Abril Fatface', Georgia;
+      color: #AEDBCE;
+      text-shadow: 1px 1px #839AA8;
+      font-size: 30px;
+      padding: 3px;
+      margin: 3px;
+    }
+
+    img {
+      margin: 5px;
+      border-radius: 3px;
+    }
+
+    #title {
+      color: #839AA8;
+      text-align: left;
+      font-family: 'Abril Fatface', Georgia;
+      text-shadow: 2px 2px #AEDBCE;
+      padding: 10px;
+      margin: 5px;
+      font-size: 50px;
+    }
+
+    section {
+      height: 1000px;
+      padding: 5px;
+      margin: 0px;
+    }
+    
+    #avo {
+      float: left;
+      font-family: 'Varela Round', sans serif;
+      color: #AEDBCE;
+      text-shadow: 0.5px 0.5px #839AA8;
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+      width: 350px;
+      height: 370px;
+      border-radius: 3px;
+      background-color: #FAF7F0;
+    }
+
+    #cauliflower {
+      float: left;
+      font-family: 'Varela Round', sans serif;
+      color: #AEDBCE;
+      text-shadow: 0.5px 0.5px #839AA8;
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+      width: 350px;
+      height: 370px;
+      border-radius: 3px;
+      background-color: #FAF7F0;
+    }
+
+    #chicken {
+      float: left;
+      font-family: 'Varela Round', sans serif;
+      color: #AEDBCE;
+      text-shadow: 0.5px 0.5px #839AA8;
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+      width: 350px;
+      height: 370px;
+      border-radius: 3px;
+      background-color: #FAF7F0;
+    }
+
+    #salad {
+      float: left;
+      font-family: 'Varela Round', sans serif;
+      color: #AEDBCE;
+      text-shadow: 0.5px 0.5px #839AA8;
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+      width: 350px;
+      height: 370px;
+      border-radius: 3px;
+      background-color: #FAF7F0;
+    }
+
+    #biscuits {
+      float: left;
+      font-family: 'Varela Round', sans serif;
+      color: #AEDBCE;
+      text-shadow: 0.5px 0.5px #839AA8;
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+      width: 350px;
+      height: 370px;
+      border-radius: 3px;
+      background-color: #FAF7F0;
+    }
+
+    #smoothies {
+      float: left;
+      font-family: 'Varela Round', sans serif;
+      color: #AEDBCE;
+      text-shadow: 0.5px 0.5px #839AA8;
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+      width: 350px;
+      height: 370px;
+      border-radius: 3px;
+      background-color: #FAF7F0;
+    }
+
+    button {
+      background-color: #AEDBCE;
+      color: #D3EBCD;
+      font-family: 'Abril Fatface', sans serif;
+      border-radius: 5px;
+      border: 0px;
+      width: 80px;
+      height: 40px;
+    }
+
+     footer {
+      background-color: #AEDBCE;
+      color: #839aa8;
+      font-family: 'Abril Fatface', sans serif;
+      font-size: 10px;
+      padding: 10px;
+      margin: 0px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+    <header>
+    <button>
+      <a href="index.html"> Home </a>
+    </button>
+
+    <button>
+      <a href="menu.html"> Menu </a>
+    </button>
+
+    <button>
+      <a href="info.html"> Info </a>
+    </button>
+
+    <h1>Hype Cafe</h1>
+    <h3>healthy food for all</h3>
+  </header>
+
+<section>
+  <div id="stripe">
+    ‎
+  </div>
+
+    <div id="title">Menu</div>
+
+    <div id="avo">
+      <h4> Avocado Toast </h4>
+      <img src="avocado.jpeg" width="250" alt="avo toast">
+      <p>Fresh sourdough bread topped with avocados, baked beans, and eggs. This is good for breakfast or a snack.</p>
+    </div>
+
+    <div id="salad">
+      <h4> Salad </h4>
+      <img src="salad.jpeg" width="250" alt="salad">
+      <p>Veggies to glow! Our salads are fully customizable so you may tell us what ingredients you would like. We'll do all the tinkering for you!</p>
+    </div>
+
+    <div id="biscuits">
+      <h4> Berry Bars </h4>
+      <img src="biscuits.jpeg" width="300" alt="fruits and mousse on biscuits">
+      <p>A sweet treat to keep you energized! Have an energy bar made with fresh fruit.</p>
+    </div>
+
+    <div id="chicken">
+      <h4> Chicken and Potatoes </h4>
+      <img src="chicken.jpeg" width="200" alt="chicken and potatoes">
+      <p>Roasted and spiced chicken breast with baked potato wedges for a hearty meal!</p>
+    </div>
+
+    <div id="cauliflower">
+      <h4> Cauliflower Wrap </h4>
+      <img src="cauliflower_wrap.jpeg" width="150" alt="cauli wrap">
+      <p>Hummus, chickpeas, and roasted cauliflower on a piece of warm pita bread - a good plant-based protein source!
+      </p>
+    </div>
+
+    <div id="smoothies">
+      <h4> Smoothies </h4>
+      <img src="smoothie.jpeg" width="150" alt="smoothie">
+      <p>Customize your smoothie with a wide selection of fresh fruit and greens! A great thirst quencher for after the
+        gym. </p>
+    </div>
+</section>
+
+    <footer>
+    <i>Copyright ©️ 2022 | Hype Cafe | Martina Emilia Garcia</i>
+    <br>
+    All media used are sourced from Pexels and Mixkit.
+   </footer>
+
+</body>
+
+</html>
